@@ -1,0 +1,28 @@
+#container {
+	width: 1640px;
+	height: 1040px;
+	background-color: #e9f0f4;
+	margin: 0 auto;
+	padding: 80px;
+	
+
+}
+
+#newPost {
+	width: 570px;
+	height: 670px;
+	background-color: #ffffff;
+}
+
+	#newPost .left {
+		width: 90px;
+		height: 670px;
+		float: left;
+		background-color: #2e3641;
+		
+	}
+
+		#newPost .left div {
+			height: 90px;
+			color: #ffffff;						
+		}
