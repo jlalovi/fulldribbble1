@@ -1,28 +1,102 @@
-#container {
-	width: 1640px;
-	height: 1040px;
-	background-color: #e9f0f4;
-	margin: 0 auto;
-	padding: 80px;
-	
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} /* This is used to fix an specific width even when you add padding */
 
+/* Clearing Float Method by Nicolas Gallagher*/
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
 }
 
-#newPost {
-	width: 570px;
-	height: 670px;
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1; /*for IE6 and IE7*/
+}
+/* Clearing Float Method by Nicolas Gallagher -END-*/
+
+.container {
 	background-color: #ffffff;
 }
 
-	#newPost .left {
-		width: 90px;
-		height: 670px;
-		float: left;
-		background-color: #2e3641;
-		
+.black-bar {
+	background-color: #2e3641;
+}
+	.more-b-bar {
+		height: 55px;
 	}
+.blue-bar {
+	background-color: #c1cfd9;
+	height: 55px;
 
-		#newPost .left div {
-			height: 90px;
-			color: #ffffff;						
+}
+
+#main-container {
+	width: 1600px;
+	height: 1200px;
+	background-color: #e9f0f4;
+	margin: 0 auto;
+	padding: 80px;
+}
+	#left {
+		width: 570px;
+		float: left;
+	}
+		#newPost {
+			height: 675px;				
 		}
+			.side {
+				width: 90px;
+				height: 670px;
+				float: left;	
+			}
+		#messages {
+			height: 90px;
+			margin-top: 60px;
+		}
+		#suscribe {
+			height: 160px;
+			margin-top: 60px;
+		}
+
+	#middle {
+		width: 430px;
+		float: left;
+		margin: 0px 60px;
+	}
+		#relatedPosts {
+			height: 390px;
+		}
+		#tags {
+			height: 170px;
+			margin-top: 60px;
+		}
+		#map {
+			height: 370px;
+			margin-top: 60px;
+		}
+
+	#right {
+		width: 320px;
+		float: left;
+	}
+		#calendar {
+			height: 330px;
+		}
+		#recentPosts {
+			margin-top: 30px;
+		}
+		#categories {
+			height: 305px;
+			margin-top: 10px;
+		}
+		#moreOptions {
+			height: 250px;
+			margin-top: 60px;
+		}
+
