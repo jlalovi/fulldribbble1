@@ -4,36 +4,69 @@
   box-sizing: border-box;
 } /* This is used to fix an specific width even when you add padding */
 
-/* Clearing Float Method by Nicolas Gallagher*/
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
+h1 {
+	font-family: sans-serif;
+	font-size: 27px;
+	font-weight: 900;
+	color: #2e3641;
+	margin: 0 0 10px 0;
+}
+h2 {
+	font-family: sans-serif;
+	font-size: 24px;
+	color: #e9f0f4;
+	margin: 0;
+	padding: 15px 0 0 20px;
+}
+a {
+	text-decoration: none;
+	color: #9eb2c0;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+p {
+	font-size: 13px;
+	color: #9eb2c0;
+	margin: 15px 0 5px 20px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.cf:after {
-  clear: both;
+textarea {
+	border-color: #dae4eb;
+	color: #dae4eb;
+	font-family: Times;
 }
-
-.cf {
-  *zoom: 1; /*for IE6 and IE7*/
-}
-/* Clearing Float Method by Nicolas Gallagher -END-*/
 
 .container {
 	background-color: #ffffff;
 }
 
-.black-bar {
+.bar {
 	background-color: #2e3641;
+	text-align: center;
 }
-	.more-b-bar {
+	.title-bar {
 		height: 55px;
+		text-align: left;
 	}
-.blue-bar {
-	background-color: #c1cfd9;
-	height: 55px;
-
+		.more-bar {
+			background-color: #c1cfd9;
+		}
+.btn {
+	display: inline-block;
+	line-height: 35px;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #f97e76;
+	color: #ffffff;
+	text-align: center;
 }
 
 #main-container {
@@ -43,7 +76,7 @@
 	margin: 0 auto;
 	padding: 80px;
 }
-	#left {
+	#left-container {
 		width: 570px;
 		float: left;
 	}
@@ -52,19 +85,84 @@
 		}
 			.side {
 				width: 90px;
-				height: 670px;
+				height: 675px;
 				float: left;	
 			}
+				.side a {
+					display: block;
+					line-height: 90px;					
+				}
+					.side a:hover {
+						background: #ffffff;
+						color: #2e3641;
+					}
+			.newPostContent {
+				width: 480px;
+				float: left;
+				padding-left: 40px;
+				padding-top: 70px;
+			}
+				.post-title {
+					width: 400px;
+					height: 45px;
+					margin-bottom: 20px;
+					font-size: 24px;
+					font-weight: bold;
+				}				
+				.format-bar {
+					height: 45px;
+					width: 400px;
+				}
+				.format-bar a {
+					display: block;
+					float: left;
+					width: 45px;
+					line-height: 45px;
+					border-right: solid 1px #3a414d;				
+				}
+				.post-body {
+					width: 400px;
+					height: 290px;
+					color: black;
+					margin-bottom: 20px;
+				}
+				.newPostContent .btn {
+					width: 120px;
+					line-height: 45px;
+				}
 		#messages {
 			height: 90px;
 			margin-top: 60px;
 		}
+			#messages a {
+				display: block;
+				float: left;
+				width: 90px;
+				line-height: 90px;
+				border-right: solid 1px #3a414d;
+			}
+			.search-message {
+				width: 245px;
+				height: 35px;
+				border: solid 1px #49525d;
+				background: #3d444e;
+				color: white;
+				margin-top: 27.5px;
+			}
 		#suscribe {
 			height: 160px;
 			margin-top: 60px;
 		}
+			#suscribe textarea {
+				width: 400px;
+				height: 35px;
+				margin-left: 20px;
+			}
+			#suscribe .btn {
+				width: 120px;
+			}
 
-	#middle {
+	#middle-container {
 		width: 430px;
 		float: left;
 		margin: 0px 60px;
@@ -72,8 +170,18 @@
 		#relatedPosts {
 			height: 390px;
 		}
+			.rpost {
+				margin-bottom: 40px;
+				width: 310px;
+			}
+				.rpost a:first-child {
+					color: #f97e76;
+					font-size: 16px;
+					font-weight: bold;					
+					line-height: 150%;
+				}
 		#tags {
-			height: 170px;
+			height: 165px;
 			margin-top: 60px;
 		}
 		#map {
@@ -81,7 +189,7 @@
 			margin-top: 60px;
 		}
 
-	#right {
+	#right-container {
 		width: 320px;
 		float: left;
 	}
