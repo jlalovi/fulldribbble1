@@ -40,6 +40,7 @@ textarea {
 	border-color: #dae4eb;
 	color: #dae4eb;
 	font-family: Times;
+	margin: 20px 0 0 20px;
 }
 
 .container {
@@ -56,6 +57,7 @@ textarea {
 	}
 		.more-bar {
 			background-color: #c1cfd9;
+			position: relative; /*To make absolute position in .scroll (Check "Recent Posts" and "Categories")*/
 		}
 .btn {
 	display: inline-block;
@@ -92,10 +94,10 @@ textarea {
 					display: block;
 					line-height: 90px;					
 				}
-					.side a:hover {
+					.document {
 						background: #ffffff;
 						color: #2e3641;
-					}
+					}					
 			.newPostContent {
 				width: 480px;
 				float: left;
@@ -105,7 +107,7 @@ textarea {
 				.post-title {
 					width: 400px;
 					height: 45px;
-					margin-bottom: 20px;
+					margin:0 0 20px 0;
 					font-size: 24px;
 					font-weight: bold;
 				}				
@@ -124,12 +126,15 @@ textarea {
 					width: 400px;
 					height: 290px;
 					color: black;
-					margin-bottom: 20px;
+					margin: 0 0 20px 0;
 				}
 				.newPostContent .btn {
 					width: 120px;
 					line-height: 45px;
 				}
+					.nonClicked {
+						background: #c1cfd9;
+					}
 		#messages {
 			height: 90px;
 			margin-top: 60px;
@@ -156,10 +161,11 @@ textarea {
 			#suscribe textarea {
 				width: 400px;
 				height: 35px;
-				margin-left: 20px;
+				margin: 0 0 0 20px;
 			}
 			#suscribe .btn {
 				width: 120px;
+				margin-left: 5px;
 			}
 
 	#middle-container {
@@ -184,10 +190,46 @@ textarea {
 			height: 165px;
 			margin-top: 60px;
 		}
+			#tags textarea{
+				width: 300px;
+				height: 35px;
+			}
+			#tags .btn {
+				width: 80px;
+				margin: 20px 0 0 5px;
+			}
+			#tags p {
+				font-size: 11px;
+				margin-top: 8px;
+			}
 		#map {
 			height: 370px;
 			margin-top: 60px;
 		}
+			.map {
+				width: 430px;
+				height: 300px;
+				background: #ddcec2;
+			}
+				.map .btn {
+					width: 35px;
+					font-size: 20px;
+					display: block;
+					position: relative;
+					top: 20px;
+					left: 20px;
+				}
+					.map .btn:last-child {
+						margin-top: 2px;
+					}
+			#map textarea {
+				width: 260px;
+				height: 35px;
+			}
+			#map .addMap {
+				width: 120px;
+				margin: 20px 0 0 5px;
+			}
 
 	#right-container {
 		width: 320px;
@@ -196,15 +238,126 @@ textarea {
 		#calendar {
 			height: 330px;
 		}
+			.calendar-bar a {
+				display: block;
+				float: left;
+				line-height: 55px;
+				border-right: solid 2px #3a414d;
+				border-bottom: solid 2px #3a414d;
+				text-align: center;
+			}
+				.arrow {
+					width: 55px;
+				}
+				.month {
+					width: 210px;
+				}
+			.calendar-bar h2 {
+				padding: 0;
+			}
+			.calendar-container {
+				width: 320px;
+				height: 275px;
+				background: #f97e76;				
+			}
+				.calendar {
+					width: 320px;
+					height: 255px;
+					text-align: center;						
+				}
+					.daysWeek {
+						background: #2e3641;
+						color: #c7c9cc;						
+					}
+					.days {
+						color: #ffffff;
+						font-size: 24px;
+					}
+						.daysOut {
+							color: #fbb2ad;
+						}
+						.today {
+							background: #2e3641;
+						}
 		#recentPosts {
-			margin-top: 30px;
+			margin-top: 30px;			
 		}
+			.scroll {
+				display: block;
+				line-height: 55px;
+				width: 55px;
+				position: absolute; /*.more-bar is relative*/
+				top: 0;
+				right: 0;
+				text-align: center;
+				background: #9eb2c0;
+				color: #ffffff;
+			}
 		#categories {
 			height: 305px;
 			margin-top: 10px;
 		}
+			#categories textarea {
+				width: 280px;
+				height: 35px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			#categories .btn {
+				width: 80px;
+			}
+				.save {
+					float: left;
+					margin: 20px 0 0 20px;
+					background: #a8bd44; 
+				}
+				.delete {
+					float: right;
+					margin: 20px 20px 0 0;
+				}
 		#moreOptions {
 			height: 250px;
 			margin-top: 60px;
 		}
+			.moreOptions-bar a{
+				display: inline-block;
+				float: left;
+				line-height: 55px;
+				width: 106.66666666667px;
+				text-align: center;				
+				font-weight: bold;
+				font-size: 16px;
+			}
+				.popular {
+					background: #ffffff;
+					color: #c5d2dc;
+				}
+				.comments {
+					background: #9eb2c0;
+					color: #ffffff;
+				}
+				.recent {
+					background: #c5d2dc;
+					color: #ffffff;
+				}
+			.popular {
+				float: left;
+			}
+				.profile-img {
+					width: 55px;
+					height: 55px;
+					background: #786665;
+					float: left;
+					margin: 15px 0 0 20px;
+				}
+				.popular p {
+					float: left;
+					margin-left: 15px;
+				}
+					.popular a:first-child {
+						font-size: 14px;
+						color: #f97e76;
+						font-weight: 900;
+						line-height: 200%;
+					}
 

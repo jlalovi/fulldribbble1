@@ -24,7 +24,7 @@
                     <div class="side bar">
                         <ul>
                             <li><a href="#1">balance</a></li>
-                            <li><a href="#2">document</a></li>
+                            <li><a href="#2" class="document">document</a></li>
                             <li><a href="#3">picture</a></li>
                             <li><a href="#4">attach</a></li>
                             <li><a href="#5">speak</a></li> 
@@ -47,8 +47,8 @@
                         </div>
                         <textarea class="post-body"></textarea>
 
-                        <a href="#12" class="btn">save draft</a>
-                        <a href="#13" class="btn">preview</a>
+                        <a href="#12" class="btn nonClicked">save draft</a>
+                        <a href="#13" class="btn nonClicked">preview</a>
                         <a href="#14" class="btn">publish</a>
                     </div>                   
                 </div>
@@ -113,27 +113,87 @@
                         <a href="#27" class="btn">-</a>
                     </div>
                     <textarea>lupa</textarea>
-                    <a href="#28" class="btn">add map</a>
+                    <a href="#28" class="btn addMap">add map</a>
                 </div>                
             </div>
 
             <div id="right-container"> <!-- Right Part -->
                 <div id="calendar" class="container"> <!-- Calendar -->
-                    <div class="bar title-bar">
+                    <div class="bar title-bar calendar-bar">
                         <ul>
-                            <li><a href="#29"><h2>&lt;</h2></a></li>
-                            <li><a href="#30"><h2>September</h2></a></li>
-                            <li><a href="#31"><h2>&gt;</h2></a></li>
+                            <li><a href="#29" class="arrow"><h2>&lt;</h2></a></li>
+                            <li><a href="#30" class="month"><h2>September</h2></a></li>
+                            <li><a href="#31" class="arrow"><h2>&gt;</h2></a></li>
                         </ul>                   
                     </div>
-                    <table>
-                    </table>
+                    <div class="calendar-container">
+                        <table class="calendar">
+                            <thead class="daysWeek">
+                                <tr>
+                                    <td>Sun</td>
+                                    <td>Mon</td>
+                                    <td>Tue</td>
+                                    <td>Wed</td>
+                                    <td>Thu</td>
+                                    <td>Fri</td>
+                                    <td>Sat</td>
+                                </tr>
+                            </thead>
+                            <tbody class="days">
+                                <tr>
+                                    <td class="daysOut">24</td>
+                                    <td class="daysOut">25</td>
+                                    <td class="daysOut">26</td>
+                                    <td class="daysOut">27</td>
+                                    <td class="daysOut">28</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td class="today">5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td class="daysOut">1</td>
+                                    <td class="daysOut">2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div id="recentPosts" class="title-bar more-bar"> <!-- Recent Posts -->
                     <ul>
                         <li><h2>Recent Posts</h2></li>
-                        <li><a href="#32" class="scroll">r arrow</a></li>
+                        <li><a href="#32" class="scroll">&rarr;</a></li>
                     </ul>
                 </div>
 
@@ -141,7 +201,7 @@
                     <div class="title-bar more-bar">
                         <ul>
                             <li><h2>Categories</h2></li>
-                            <li><a href="#33" class="scroll">d arrow</a></li>
+                            <li><a href="#33" class="scroll">&darr;</a></li>
                         </ul>
                     </div>
                     <textarea>Title</textarea>
@@ -152,26 +212,26 @@
                     <div class="marker ticked"></div>
                     <p>show hierarchy</p>
                     <ul>
-                        <li><a href="#41" class="btn">save</a></li>
-                        <li><a href="#42" class="btn">delete</a></li>
+                        <li><a href="#41" class="btn save">save</a></li>
+                        <li><a href="#42" class="btn delete">delete</a></li>
                     </ul>    
                 </div>
 
                 <div id="moreOptions" class="container"> <!-- More Options -->
-                    <div class="title-bar more-bar">
+                    <div class="title-bar more-bar moreOptions-bar">
                         <ul>
-                            <li><a href="#34">Popular</a></li>
-                            <li><a href="#35">Comments</a></li>
-                            <li><a href="#36">Recent</a></li>
+                            <li><a href="#34" class="popular">Popular</a></li>
+                            <li><a href="#35" class="comments">Comments</a></li>
+                            <li><a href="#36" class="recent">Recent</a></li>
                         </ul>
                     </div>
                     <div class="popular">
-                        <div>Profile img</div>
+                        <div class="profile-img">Profile img</div>
                         <p><a href="#37">Fourteen years in Châteu d'lf</a> <br/>
                         <a href="#38">by Edmond Dantès</a></p>                    
                     </div>
                     <div class="popular">
-                        <div>Profile img</div>
+                        <div class="profile-img">Profile img</div>
                         <p><a href="#39">Number 34 and number 27</a> <br/>
                         <a href="#40">by The Count of Monte Cristo</a></p>                    
                     </div>
