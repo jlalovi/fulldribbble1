@@ -24,7 +24,7 @@
                     <div class="side bar">
                         <ul>
                             <li><a href="#1">balance</a></li>
-                            <li><a href="#2" class="document">document</a></li>
+                            <li><a href="#2" id="document">document</a></li>
                             <li><a href="#3">picture</a></li>
                             <li><a href="#4">attach</a></li>
                             <li><a href="#5">speak</a></li> 
@@ -33,7 +33,7 @@
 
                     <div class="newPostContent">
                         <h1>Add New Post</h1>               
-                        <textarea class="post-title">Enter title here</textarea>
+                        <input type="text" placeholder="Enter title here" id="post-title"> 
 
                         <div class="format-bar bar">
                             <ul>
@@ -58,7 +58,7 @@
                         <li><a href="#15">nube</a></li>
                         <li><a href="#16">sobre</a></li>
                         <li><a href="#17">corazon</a></li>
-                        <li><textarea class="search-message">lupa</textarea></li>
+                        <li><input type="text" id="search-message" placeholder="lupa"></li>
                     </ul>
                 </div>
 
@@ -68,7 +68,7 @@
                     </div>
 
                     <p>Get our feed through email.</p>
-                    <textarea>e.g. simbad@montecristo.com</textarea>
+                    <input type="text" placeholder="e.g. simbad@montecristo.com">
                     <a href="#18" class="btn">suscribe</a>
                 </div>          
             </div>
@@ -82,37 +82,38 @@
                     <div class="rpost">
                         <p><a href="#19">Philosophy cannot be taught; it is the application of the sciences to truth</a> <br/>
                         <a href="#20">by Lord Wilmore</a></p>
-                        <div class="marker ticked"></div>
                     </div>
+                    <input type="checkbox">
 
                     <div class="rpost">
                         <p><a href="#21">Now let the avenging god make way for me to punish the wrongdoer!</a> <br/>
                         <a href="#22">by Abbe Busoni</a></p>
-                        <div class="marker"></div>
                     </div>
+                    <input type="checkbox">
 
                     <div class="rpost">
                         <p><a href="#23">There is neither happiness nor misery in the world</a> <br/>
                         <a href="#24">by Monsieur Zaccone</a></p>
-                        <div class="marker ticked"></div>
                     </div>
+                    <input type="checkbox">
                 </div>
 
                 <div id="tags" class="container"> <!-- Tags -->
                     <div class="bar title-bar">
                         <h2>Tags</h2>
                     </div>
-                    <textarea></textarea>
+                    <input type="text">
                     <a href="#25" class="btn">add</a>
                     <p>Separate tags with commas</p>
                 </div>
 
                 <div id="map" class="container"> <!-- Map -->
                     <div class="map">
+                        <img src="img/map.png" alt="Map Paris">
                         <a href="#26" class="btn">+</a>
                         <a href="#27" class="btn">-</a>
                     </div>
-                    <textarea>lupa</textarea>
+                    <input type="text" placeholder="lupa">
                     <a href="#28" class="btn addMap">add map</a>
                 </div>                
             </div>
@@ -141,49 +142,49 @@
                             </thead>
                             <tbody class="days">
                                 <tr>
-                                    <td class="daysOut">24</td>
-                                    <td class="daysOut">25</td>
-                                    <td class="daysOut">26</td>
-                                    <td class="daysOut">27</td>
-                                    <td class="daysOut">28</td>
-                                    <td>1</td>
-                                    <td>2</td>
+                                    <td class="daysOut"><a href="48">24</a></td>
+                                    <td class="daysOut"><a href="49">25</a></td>
+                                    <td class="daysOut"><a href="50">26</a></td>
+                                    <td class="daysOut"><a href="51">27</a></td>
+                                    <td class="daysOut"><a href="52">28</a></td>
+                                    <td><a href="53">1</a></td>
+                                    <td><a href="54">2</a></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td class="today">5</td>
-                                    <td>6</td>
-                                    <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
+                                    <td><a href="55">3</a></td>
+                                    <td><a href="56">4</a></td>
+                                    <td class="today"><a href="57">5</a></td>
+                                    <td><a href="58">6</a></td>
+                                    <td><a href="59">7</a></td>
+                                    <td><a href="60">8</a></td>
+                                    <td><a href="61">9</a></td>
                                 </tr>
                                 <tr>
-                                    <td>10</td>
-                                    <td>11</td>
-                                    <td>12</td>
-                                    <td>13</td>
-                                    <td>14</td>
-                                    <td>15</td>
-                                    <td>16</td>
+                                    <td><a href="62">10</a></td>
+                                    <td><a href="63">11</a></td>
+                                    <td><a href="64">12</a></td>
+                                    <td><a href="65">13</a></td>
+                                    <td><a href="66">14</a></td>
+                                    <td><a href="67">15</a></td>
+                                    <td><a href="68">16</a></td>
                                 </tr>
                                 <tr>
-                                    <td>17</td>
-                                    <td>18</td>
-                                    <td>19</td>
-                                    <td>20</td>
-                                    <td>21</td>
-                                    <td>22</td>
-                                    <td>23</td>
+                                    <td><a href="69">17</a></td>
+                                    <td><a href="70">18</a></td>
+                                    <td><a href="71">19</a></td>
+                                    <td><a href="72">20</a></td>
+                                    <td><a href="73">21</a></td>
+                                    <td><a href="74">22</a></td>
+                                    <td><a href="75">23</a></td>
                                 </tr>
                                 <tr>
-                                    <td>24</td>
-                                    <td>25</td>
-                                    <td>26</td>
-                                    <td>27</td>
-                                    <td>28</td>
-                                    <td class="daysOut">1</td>
-                                    <td class="daysOut">2</td>
+                                    <td><a href="76">24</a></td>
+                                    <td><a href="77">25</a></td>
+                                    <td><a href="78">26</a></td>
+                                    <td><a href="79">27</a></td>
+                                    <td><a href="80">28</a></td>
+                                    <td class="daysOut"><a href="81">1</a></td>
+                                    <td class="daysOut"><a href="82">2</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -204,13 +205,13 @@
                             <li><a href="#33" class="scroll">&darr;</a></li>
                         </ul>
                     </div>
-                    <textarea>Title</textarea>
-                    <div class="marker ticked"></div>
+                    <input type="text" placeholder="Title">
+                    <input type="checkbox">
                     <p>Display as dropdown</p>
-                    <div class="marker"></div>
+                    <input type="checkbox">
                     <p>Show posts counts</p>
-                    <div class="marker ticked"></div>
-                    <p>show hierarchy</p>
+                    <input type="checkbox">
+                    <p>Show hierarchy</p>
                     <ul>
                         <li><a href="#41" class="btn save">save</a></li>
                         <li><a href="#42" class="btn delete">delete</a></li>
@@ -221,8 +222,8 @@
                     <div class="title-bar more-bar moreOptions-bar">
                         <ul>
                             <li><a href="#34" class="popular">Popular</a></li>
-                            <li><a href="#35" class="comments">Comments</a></li>
-                            <li><a href="#36" class="recent">Recent</a></li>
+                            <li><a href="#35" class="comments-recent">Comments</a></li>
+                            <li><a href="#36" class="comments-recent">Recent</a></li>
                         </ul>
                     </div>
                     <div class="popular">
