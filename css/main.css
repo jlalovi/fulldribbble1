@@ -37,6 +37,7 @@ a {
 	}
 p {
 	font-size: 13px;
+	font-family: sans-serif;
 	color: #9eb2c0;
 	margin: 15px 0 5px 20px;
 }
@@ -72,13 +73,25 @@ input[type=text]{
     	color: #dae4eb;
     	font-weight: bold;
 	}
+
 input[type=checkbox] {
-	width: 30px;
-	height: 30px;
-	float: right;
-
-
+	display: none;
 }
+	input[type=checkbox] + label {
+		cursor: pointer;
+		position: relative;
+	}
+	input[type=checkbox] + label:before {
+		border: 1px solid #dae4eb;
+		color: green;
+		content: "X";
+		height: 30px;
+		position: absolute;
+		width: 30px;
+	}
+	input[type=checkbox]:checked + label:before {
+		content: "S";
+	}
 
 .container {
 	background-color: #ffffff;
@@ -157,7 +170,6 @@ input[type=checkbox] {
 					display: block;
 					line-height: 90px;
 					font-size: 22px;
-					font-weight: bold;		
 				}					
 					#document {
 						background: #ffffff;
@@ -187,7 +199,6 @@ input[type=checkbox] {
 				}
 				.format-bar a {
 					font-size: 12px;
-					font-weight: bold;
 					display: block;
 					float: left;
 					width: 45px;
@@ -204,11 +215,13 @@ input[type=checkbox] {
 					width: 120px;
 					line-height: 45px;
 				}
-					.nonClicked {
+					.disabled {
 						background: #c1cfd9;
 					}
-						.nonClicked:hover {
+						.disabled:hover {
 							background: #c1cfd9;
+							cursor: default;
+
 						}
 		#messages {
 			height: 90px;
@@ -350,38 +363,38 @@ input[type=checkbox] {
 				height: 275px;
 				background: #f97e76;				
 			}
-				.calendar {
-					text-align: center;						
+				.daysWeek {
+					background: #2e3641;
+					width: 320px;
+					height: 40px;						
 				}
-					.daysWeek{
-						background: #2e3641;
-						color: #ffffff;							
+					.daysWeek li {
+						color: #ffffff;
+						display: inline-block;
+						padding: 10px 0;
+						width: 40px;
+						text-align: center;
+						padding-left: 15px;
 					}
-						.daysWeek td {
-							padding: 10px 0 10px 15px;
-						}
-							.daysWeek td:first-child {
-								padding-left: 19px;
-							}
-							.daysWeek td:last-child {
-								padding-right: 19px;
-							}
-					.days a{
+				.calendar {
+					text-align: center;
+					width: 310px;
+					margin-left: 8px;							
+				}					
+					.days a {
 						color: #ffffff;
 						font-size: 24px;
 					}
 					.days td {
-						padding: 8px 4px; 
-					}
-						.days td:first-child {
-							padding-left: 18px;
-						}
+						padding: 7px 0px; 
+					}					
 					.daysOut a {
 						color: #fbb2ad;
 					}
 					.today {
 						background: #2e3641;
-						}
+					}
+
 		#recentPosts {
 			margin-top: 30px;			
 		}
@@ -414,6 +427,10 @@ input[type=checkbox] {
 				height: 35px;
 				font-size: 18px;
 				font-weight: bold;
+			}
+
+			#categories input[type=checkbox] {
+				float: left;
 			}
 			#categories .btn {
 				width: 80px;				

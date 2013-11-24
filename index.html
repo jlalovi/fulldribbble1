@@ -48,8 +48,8 @@
                         </div>
                         <textarea class="post-body"></textarea>
 
-                        <a href="#12" class="btn nonClicked">save draft</a>
-                        <a href="#13" class="btn nonClicked">preview</a>
+                        <a href="#12" class="btn disabled">save draft</a>
+                        <a href="#13" class="btn disabled">preview</a>
                         <a href="#14" class="btn">publish</a>
                     </div>                   
                 </div>
@@ -85,19 +85,22 @@
                         <p><a href="#19">Philosophy cannot be taught; it is the application of the sciences to truth</a> <br/>
                         <a href="#20">by Lord Wilmore</a></p>
                     </div>
-                    <input type="checkbox">
+                    <input type="checkbox" name="chk1" id"chk1">
+                    <label for="chk1"></label>
 
                     <div class="rpost">
                         <p><a href="#21">Now let the avenging god make way for me to punish the wrongdoer!</a> <br/>
                         <a href="#22">by Abbe Busoni</a></p>
                     </div>
-                    <input type="checkbox">
+                    <input type="checkbox" name="chk2" id"chk1">
+                    <label for="chk2"></label>
 
                     <div class="rpost">
                         <p><a href="#23">There is neither happiness nor misery in the world</a> <br/>
                         <a href="#24">by Monsieur Zaccone</a></p>
                     </div>
-                    <input type="checkbox">
+                    <input type="checkbox" name="chk3" id"chk1">
+                    <label for="chk3"></label>
                 </div>
 
                 <div id="tags" class="container"> <!-- Tags -->
@@ -131,18 +134,18 @@
                         </ul>                   
                     </div>
                     <div class="calendar-container">
+                        <div class="daysWeek">
+                            <ul>
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                        </div>
                         <table class="calendar">
-                            <thead class="daysWeek">
-                                <tr>
-                                    <td>Sun</td>
-                                    <td>Mon</td>
-                                    <td>Tue</td>
-                                    <td>Wed</td>
-                                    <td>Thu</td>
-                                    <td>Fri</td>
-                                    <td>Sat</td>
-                                </tr>
-                            </thead>
                             <tbody class="days">
                                 <tr>
                                     <td class="daysOut"><a href="48">24</a></td>
@@ -208,13 +211,23 @@
                             <li><a href="#33" class="scroll"><span class="entypo-down-dir"></span></a></li>
                         </ul>
                     </div>
-                    <input type="text" placeholder="Title">
-                    <input type="checkbox">
-                    <p>Display as dropdown</p>
-                    <input type="checkbox">
-                    <p>Show posts counts</p>
-                    <input type="checkbox">
-                    <p>Show hierarchy</p>
+                    <ul>
+                        <li class="categories-opt">
+                            <input type="checkbox" name="chk4" id"chk1">
+                            <label for="chk4"></label>
+                            <p>Display as dropdown</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="chk5" id"chk1">
+                            <label for="chk5"></label>
+                            <p>Show posts counts</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="chk6" id"chk1">
+                            <label for="chk6"></label>
+                            <p>Show hierarchy</p>
+                        </li>
+                    </ul>
                     <ul>
                         <li><a href="#41" class="btn save">save</a></li>
                         <li><a href="#42" class="btn delete">delete</a></li>
