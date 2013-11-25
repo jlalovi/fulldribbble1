@@ -8,6 +8,8 @@
 	  font-family: 'FontAwesome', sans-serif;
 	}
 
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -83,14 +85,18 @@ input[type=checkbox] {
 	}
 	input[type=checkbox] + label:before {
 		border: 1px solid #dae4eb;
-		color: green;
-		content: "X";
+		color: #ffffff;
+		font-family: FontAwesome;
+		font-size: 22px;
+		content: "\f00c";
 		height: 30px;
-		position: absolute;
+		line-height: 30px;
 		width: 30px;
+		text-align: center;
 	}
 	input[type=checkbox]:checked + label:before {
-		content: "S";
+		color: #a8bd44;
+		content: "\f00c";
 	}
 
 .container {
@@ -159,7 +165,8 @@ input[type=checkbox] {
 		float: left;
 	}
 		#newPost {
-			height: 675px;				
+			height: 675px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			.side {
 				width: 90px;
@@ -227,6 +234,7 @@ input[type=checkbox] {
 			height: 90px;
 			margin-top: 60px;
 			position: relative;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			#messages a {
 				display: inline-block;
@@ -252,6 +260,7 @@ input[type=checkbox] {
 		#suscribe {
 			height: 160px;
 			margin-top: 60px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			#suscribe input[type=text] {
 				width: 400px;
@@ -270,6 +279,7 @@ input[type=checkbox] {
 	}
 		#relatedPosts {
 			height: 390px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			.rpost {
 				margin-bottom: 30px;
@@ -282,9 +292,15 @@ input[type=checkbox] {
 					font-weight: bold;					
 					line-height: 150%;
 				}
+				.rpost-checkbox + label:before {
+					position: absolute;
+					left: 65px;
+					top: -45px;
+				}
 		#tags {
 			height: 165px;
 			margin-top: 60px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			#tags input[type=text] {
 				width: 300px;
@@ -302,6 +318,7 @@ input[type=checkbox] {
 			height: 370px;
 			margin-top: 60px;
 			position: relative;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			.map {
 				width: 430px;
@@ -340,6 +357,7 @@ input[type=checkbox] {
 	}
 		#calendar {
 			height: 330px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			.calendar-bar a {
 				display: block;
@@ -396,7 +414,8 @@ input[type=checkbox] {
 					}
 
 		#recentPosts {
-			margin-top: 30px;			
+			margin-top: 30px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;			
 		}
 			.scroll {
 				display: block;
@@ -421,6 +440,7 @@ input[type=checkbox] {
 		#categories {
 			height: 305px;
 			margin-top: 10px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			#categories input[type=text] {
 				width: 280px;
@@ -428,34 +448,39 @@ input[type=checkbox] {
 				font-size: 18px;
 				font-weight: bold;
 			}
-
-			#categories input[type=checkbox] {
-				float: left;
+			#categories label {
+				color: #a4b7c4;
+				font-size: 14px;
+				font-family: sans-serif;				
+			}
+			.categories-checkbox + label:before {
+				display: inline-block;
+				margin: 10px 10px 0 20px;
 			}
 			#categories .btn {
 				width: 80px;				
 			}
 				.save {
 					float: left;
-					margin: 20px 0 0 20px;
+					margin: 15px 0 0 20px;
 					background: #a8bd44;
 					-webkit-transition: background .5s ease-out;
 					-moz-transition: background .5s ease-out;
 					-o-transition: background .5s ease-out;
 					-ms-transition: background .5s ease-out;
 					transition: background .5s ease-out;
-
 				}
 					.save:hover {
 						background: #97AA3C;
 					}
 				.delete {
 					float: right;
-					margin: 20px 20px 0 0;
+					margin: 15px 20px 0 0;
 				}
 		#moreOptions {
 			height: 250px;
 			margin-top: 60px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
 		}
 			.moreOptions-bar a{
 				display: inline-block;
